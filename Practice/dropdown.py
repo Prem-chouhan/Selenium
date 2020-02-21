@@ -8,10 +8,10 @@ class Dropdown:
         driver = webdriver.Chrome()
 
         driver.get("https://www.irctc.co.in/nget/profile/user-registration")
-        element = driver.find_elements_by_tag_name("label")
+        element = driver.find_elements_by_css_selector("")
         drp = Select(element)
 
-        drp.select_by_index('English')
+        drp.select_by_index(1)
 
 
 if __name__ == '__main__':
